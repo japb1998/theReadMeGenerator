@@ -1,3 +1,7 @@
+#Json
+**/.json
+#Ds.storage
+**/.DS_Store
 # Logs
 logs
 *.log

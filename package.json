@@ -1,0 +1,23 @@
+{
+  "name": "theReadMeGenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/japb1998/theReadMeGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/japb1998/theReadMeGenerator/issues"
+  },
+  "homepage": "https://github.com/japb1998/theReadMeGenerator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
