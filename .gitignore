@@ -2,6 +2,9 @@
 **/.json
 #Ds.storage
 **/.DS_Store
+#modules
+**/node_modules/
+
 # Logs
 logs
 *.log

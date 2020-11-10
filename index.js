@@ -1,61 +1,72 @@
 //node modules to use
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { title } = require('process');
-//vars
+const {
+    title
+} = require('process');
 
 
+//inquirer to generate the questions
 inquirer.prompt(
-     [
-         {
-             type:'input',
-             message:`What's the desire title`,
-             name:'title',
-         },
-         {
-             type:'input',
-             message:'how do you install your app?',
-             name:'installation',
-         },
-         {
-             type:'input',
-             message:'instructions to be followed?',
-             name:'instructions',
-         },
-         {
-             type:'input',
-             message:'any credits?',
-             name:'credit',
-         },
-         {
-            type:'input',
-            message:'how to use it?',
-            name:'usage',
+    [{
+            type: 'input',
+            message: `What's the desire title`,
+            name: 'title',
         },
-         {
-             type:"checkbox",
-             message:'any license?',
-             name:'license',
-             choices:['The MIT License','The MIT License','The GPL License']
-         },
-         {
-             type:'input',
-             message:'GitHub username',
-             name:'git',
-         },
-         {
-             type:'input',
-             message:'Linkedin username',
-             name:'linkedin'
-         },
-         {
-             type:"input",
-             message:'E-mail',
-             name:'email'
+        {
+            type: 'input',
+            message: 'how do you install your app?',
+            name: 'installation',
+        },
+        {
+            type: 'input',
+            message: 'instructions to be followed?',
+            name: 'instructions',
+        },
+        {
+            type: 'input',
+            message: 'any credits?',
+            name: 'credit',
+        },
+        {
+            type: 'input',
+            message: 'how to use it?',
+            name: 'usage',
+        },
+        {
+            type: "checkbox",
+            message: 'any license?',
+            name: 'license',
+            choices: ['The MIT License', 'The MIT License', 'The GPL License']
+        },
+        {
+            type: 'input',
+            message: 'GitHub username',
+            name: 'git',
+        },
+        {
+            type: 'input',
+            message: 'Linkedin username',
+            name: 'linkedin'
+        },
+        {
+            type: "input",
+            message: 'E-mail',
+            name: 'email'
         }
-     ]
-).then(({title,installation,instructions,credit,license,git,linkedin,email,usage})=>
-{
+    ]
+).then(({
+    title,
+    installation,
+    instructions,
+    credit,
+    license,
+    git,
+    linkedin,
+    email,
+    usage
+}) => {
+    //template to be used 
     let template = `# ${title}
 
 * [Installation](#installation)
@@ -78,10 +89,12 @@ ${license}
 * Linkedin :${linkedin}
 * E-mail :${email}`;
 
-    console.log(title,installation,instructions,credit,license,git,linkedin,email,usage);
+    console.log(title, installation, instructions, credit, license, git, linkedin, email, usage);
 
-    fs.writeFile(`./${title.toLowerCase().split(' ').join('')}.md`,template,(err)=>{
-        if(err){console.log(err)}
+    fs.writeFile(`./${title.toLowerCase().split(' ').join('')}.md`, template, (err) => {
+        if (err) {
+            console.log(err)
+        }
         console.log('Your README has been succesfully generated');
     })
 })

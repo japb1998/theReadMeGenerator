@@ -1,4 +1,4 @@
-# Title
+# Title TheReadMeGenerator
 
 * [Installation](#installation)
 * [Usage](#usage)
