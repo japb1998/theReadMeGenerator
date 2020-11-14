@@ -2,7 +2,7 @@
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
-* [License](#license)
+* [Demo video](#Demo)
 
 
 # Installation
@@ -18,10 +18,8 @@ theReadMeGenerator will ask the user different questions base on the readMe temp
 * ways to be contacted.
 ### instructions 
 to use theReadMeGenerator you have to access it through node from you terminal ex:'node theReadMeGenerator.js' if you are already on the directory.
-## Walkthrough video
-
-# Credits
-# License 
+# Demo
+https://www.youtube.com/watch?v=2VUQABoFOqw&t=620s
 
 # Contact
 * GitHub :
