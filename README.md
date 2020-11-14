@@ -1,5 +1,4 @@
 # Title TheReadMeGenerator
-
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
@@ -28,3 +27,5 @@ to use theReadMeGenerator you have to access it through node from you terminal e
 * GitHub :
 * Linkedin :
 * E-mail :
+
+
