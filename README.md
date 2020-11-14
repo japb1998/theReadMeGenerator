@@ -22,8 +22,7 @@ to use theReadMeGenerator you have to access it through node from you terminal e
 https://www.youtube.com/watch?v=2VUQABoFOqw&t=620s
 
 # Contact
-* GitHub :
-* Linkedin :
-* E-mail :
+* GitHub : Japb1998
+* E-mail : japb1998@gmail.com
 
 
