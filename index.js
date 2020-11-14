@@ -82,7 +82,6 @@ inquirer.prompt(
     email,
     usage,
     contribution,
-    licensePick
 }) => {
     if(!license){
         license = 'Not license used for this project'
